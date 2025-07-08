@@ -1,0 +1,31 @@
+
+[volume]
+command=~/.config/i3blocks/volume-pulseaudio
+interval=1
+signal=10
+
+[datetime]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+label=🕒
+
+[cpu_usage]
+command="/usr/bin/grep 'cpu ' /proc/stat | /usr/bin/awk '{usage=($2+$4)*100/($2+$4+$5)} END {printf \"%.1f%%\", usage}'"
+interval=5
+
+[mem_usage]
+command="/usr/bin/free -m | /usr/bin/awk 'NR==2{printf \"%sMB / %sMB\", $3,$2 }'"
+interval=5
+
+[disk_usage]
+command="/usr/bin/df -h / | /usr/bin/awk 'NR==2{print $5 \" used\"}'"
+interval=60
+
+[temp_cpu]
+command="/usr/bin/sensors | /usr/bin/grep 'Package id 0:' | /usr/bin/awk '{print $4}'"
+interval=10
+
+[weather]
+command="/usr/bin/curl -s 'wttr.in/?format=1'"
+interval=1800
+
