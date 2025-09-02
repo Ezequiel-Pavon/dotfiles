@@ -1,7 +1,3 @@
-Perfecto 🙌 gracias por compartir tu archivo de configuración de **i3**. Con esto ya puedo armarte un README claro y presentable para tu repositorio **dotfiles**. Te propongo una estructura como esta:
-
----
-
 # Dotfiles – i3 Config
 
 Este repositorio contiene mis archivos de configuración personales para **i3wm** (tiling window manager en Linux). Incluye atajos de teclado, configuración de gaps, reglas para aplicaciones, personalización de la barra con **i3blocks**, y ajustes para múltiples monitores.
@@ -85,5 +81,3 @@ Mod+Shift+c
 MIT – libre para uso y modificación.
 
 ---
-
-¿Quieres que lo deje **más minimalista** (solo con instrucciones básicas) o prefieres este estilo más **detallado y documentado**?
