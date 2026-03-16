@@ -7,7 +7,7 @@ Este repositorio contiene mis archivos de configuración personales para **i3wm*
 * `i3-config/` → Configuración principal de i3wm.
 * `.gitignore` → Archivos ignorados en git.
 
-## ⚡ Características principales
+## Características principales
 
 * **Atajos de teclado personalizados**
 
@@ -43,7 +43,7 @@ Este repositorio contiene mis archivos de configuración personales para **i3wm*
 
 * **Barra inferior (i3blocks)** con esquema de colores personalizado.
 
-## 🛠️ Requisitos
+## Requisitos
 
 * [i3wm](https://i3wm.org/)
 * [i3blocks](https://github.com/vivien/i3blocks)
@@ -54,7 +54,7 @@ Este repositorio contiene mis archivos de configuración personales para **i3wm*
 * [gnome-screenshot](https://gitlab.gnome.org/GNOME/gnome-screenshot)
 * [xrandr](https://www.x.org/releases/X11R7.6/doc/man/man1/xrandr.1.xhtml)
 
-## 🚀 Instalación
+## Instalación
 
 Clonar el repositorio y copiar los archivos de configuración a la carpeta de i3:
 
@@ -70,7 +70,7 @@ Recargar i3 para aplicar los cambios:
 Mod+Shift+c
 ```
 
-## 🎨 Personalización
+## Personalización
 
 * Puedes editar los gaps, bordes, colores y atajos modificando el archivo en `i3-config/config`.
 * Para cambiar el fondo de pantalla, usa `nitrogen`.
