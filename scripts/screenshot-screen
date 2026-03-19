@@ -1,0 +1,28 @@
+#!/bin/bash
+
+DIR="$HOME/Imágenes/Capturas de pantalla"
+mkdir -p "$DIR"
+
+MX=$(xdotool getmouselocation | sed 's/.*x:\([0-9]*\).*/\1/')
+MY=$(xdotool getmouselocation | sed 's/.*y:\([0-9]*\).*/\1/')
+
+case 1 in
+    $(($MX >= 1280 && $MX < 3200)))
+        GEOM="1920x1080+1280+0"
+        ;;
+    $(($MX >= 0 && $MX < 1280)))
+        GEOM="1280x1024+0+0"
+        ;;
+    $(($MX >= 3200)))
+        GEOM="1024x1280+3200+0"
+        ;;
+    *)
+        GEOM=""
+        ;;
+esac
+
+if [ -n "$GEOM" ]; then
+    import -window root -crop "$GEOM" "$DIR/$(date +'%Y-%m-%d_%H-%M-%S').png"
+else
+    import -window root "$DIR/$(date +'%Y-%m-%d_%H-%M-%S').png"
+fi
