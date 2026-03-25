@@ -67,7 +67,7 @@ cp -r i3-config/* ~/.config/i3/config
 Recargar i3 para aplicar los cambios:
 
 ```bash
-Mod+Shift+c
+Mod+Shift+r
 ```
 
 ## Personalización
