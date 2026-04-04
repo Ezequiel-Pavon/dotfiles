@@ -19,13 +19,11 @@ require("lazy").setup("h.plugins")
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
--- Configurar gruvbox específicamente
+-- Configurar gruvbox 
 vim.g.gruvbox_bold = 1
 vim.g.gruvbox_italic = 1
-vim.g.gruvbox_contrast_dark = 'hard'  -- Usa el negro más oscuro (#1d2021)
+vim.g.gruvbox_contrast_dark = 'hard' 
 
--- Si quieres personalizar el color negro específicamente:
--- vim.cmd('highlight Normal guibg=#282828 guifg=#ebdbb2')
 
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.number = true
